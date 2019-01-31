@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Button from './Button';
+//import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
+    
+    console.log('Hola pero en la consola');
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="App" id={this.props.id}>
+        <Button cetav="hola cetav"></Button>
+        <Button title="hola">
+          <h1>Hola</h1>
+        </Button>
+        <Button meme="hello">
+          <p>Quiero un helado</p>
+        </Button>
+        <h1 cetav="title">Esto es otra prueba</h1>
+        <a href="meme">meme</a>
       </div>
     );
   }
